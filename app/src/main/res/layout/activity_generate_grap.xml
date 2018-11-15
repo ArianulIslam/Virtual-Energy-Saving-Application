@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.debuggersstudio.bid.GenerateGrap">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:text="Enter Monthly Bill :"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Select Month :"
+        android:layout_below="@+id/billtxt"
+        android:layout_alignStart="@+id/textView2" />
+
+   <EditText
+       android:id="@+id/billtxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/textView2"
+       android:layout_alignBottom="@+id/textView2"
+       android:layout_alignParentEnd="true"
+       android:layout_marginEnd="14dp"
+       android:ems="10"
+       android:inputType="numberSigned" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/billtxt"></Spinner>
+
+    <Button
+        android:id="@+id/grpbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Graph"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true" />
+
+
+   <com.jjoe64.graphview.GraphView
+          android:id="@+id/grap"
+          android:layout_width="368dp"
+          android:layout_height="400dp"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentStart="true"
+          tools:layout_editor_absoluteX="0dp"
+          tools:layout_editor_absoluteY="0dp"
+    android:layout_below="@+id/grpbtn" />
+</RelativeLayout>

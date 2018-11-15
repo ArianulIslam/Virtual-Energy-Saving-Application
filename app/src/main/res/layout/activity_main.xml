@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.debuggersstudio.bid.MainActivity">
+
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageButton
+        android:id="@+id/Biddutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewPager"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Biddut"
+        app:srcCompat="@drawable/lightbulb" />
+
+    <ImageButton
+        android:id="@+id/gasbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Biddutbtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="gas"
+        app:srcCompat="@drawable/gas" />
+
+    <ImageButton
+        android:id="@+id/waterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/gasbtn"
+        android:layout_marginEnd="20dp"
+        android:onClick="Panibtn"
+        app:srcCompat="@drawable/water2" />
+
+    <TextView
+        android:id="@+id/gastxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="গ্যাস"
+        android:layout_below="@+id/gasbtn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/bidduttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="বিদ্যুৎ"
+        android:layout_above="@+id/grapbtn"
+        android:layout_alignStart="@+id/graphtxt"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/watertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="পানি"
+        android:layout_marginEnd="29dp"
+        android:layout_above="@+id/grapbtn"
+        android:layout_alignEnd="@+id/waterbtn" />
+
+    <TextView
+        android:id="@+id/playtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ভিডিও"
+        android:layout_alignEnd="@+id/watertxt"
+        android:layout_below="@+id/playbtn" />
+
+    <TextView
+        android:id="@+id/cntrltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="কন্ট্রোলার"
+        android:layout_below="@+id/cntrlbtn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/graphtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="বিল পর্যবেক্ষন"
+        android:layout_below="@+id/grapbtn"
+        android:layout_alignEnd="@+id/grapbtn" />
+
+    <ImageButton
+        android:id="@+id/grapbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Biddutbtn"
+        android:layout_below="@+id/gastxt"
+        android:layout_marginTop="10dp"
+        android:onClick="grap"
+        app:srcCompat="@drawable/charts" />
+
+    <ImageButton
+        android:id="@+id/cntrlbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gasbtn"
+        android:layout_alignTop="@+id/grapbtn"
+        android:onClick="control"
+        app:srcCompat="@drawable/switchs" />
+
+    <ImageButton
+        android:id="@+id/playbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/waterbtn"
+        android:layout_alignTop="@+id/cntrlbtn"
+        android:onClick="video"
+        app:srcCompat="@drawable/playbutton" />
+
+</RelativeLayout>

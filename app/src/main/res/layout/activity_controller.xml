@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.debuggersstudio.bid.controller">
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="242dp"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/switch4" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="189dp"
+        android:layout_below="@+id/switch3"
+        android:layout_alignStart="@+id/switch3"
+        android:layout_marginTop="16dp" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignStart="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="75dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="এসি"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="31dp"
+        android:text="বাতি"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="টিভি"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="247dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/switch4"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ফ্যান"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="189dp"
+        android:layout_alignBaseline="@+id/switch4"
+        android:layout_alignBottom="@+id/switch4"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text="মেইন সুইটচ"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="75dp"
+        android:layout_alignBaseline="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/switch5"
+        android:layout_alignTop="@+id/textView4"
+        android:text="Switch" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/switch3"
+        app:srcCompat="@drawable/mains" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/idea"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/switch4"
+        android:layout_alignStart="@+id/imageButton2"
+        app:srcCompat="@drawable/fan" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton3"
+        android:layout_below="@+id/imageButton3"
+        app:srcCompat="@drawable/televisions" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton4"
+        android:layout_below="@+id/switch5"
+        app:srcCompat="@drawable/minisplitsss"
+        android:layout_alignBottom="@+id/switch2" />
+
+</RelativeLayout>

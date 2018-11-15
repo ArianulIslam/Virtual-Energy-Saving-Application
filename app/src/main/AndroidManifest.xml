@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.debuggersstudio.bid">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/renewable"
+        android:label="Energy Virtual Assistant"
+        android:roundIcon="@drawable/renewable"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GenerateGrap" />
+        <activity android:name=".GasActivity" />
+        <activity android:name=".biddut" />
+        <activity android:name=".Pani" />
+
+        <receiver android:name=".Notification_receiver" />
+
+        <activity android:name=".controller" />
+        <activity android:name=".video"></activity>
+    </application>
+
+</manifest>
